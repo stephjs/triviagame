@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steph's Trivia Game</title>
+	<link href='https://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type "text/css" href="assets/css/trivia.css">
+</head>
+<body>
+<center>
+	<div class="jumbotron">
+		<h1>ARE YOU SMARTER THAN A 5TH GRADER?</h1>
+	</div>
+
+	<div id="box">
+		<div id="startbox">
+			<h2>PROBS NOT TBH...</h2>
+			<button id="start">Start</button>
+		</div>
+		<div id="gamebox">
+			<div id="question"><h2></h2></div>
+			<br>
+			<div id="timer"></div>
+			<br>
+			<div class = "answer" id="opA"><h4></h4></div>
+			<div class = "answer" id="opB"><h4></h4></div>
+			<div class = "answer" id="opC"><h4></h4></div>
+			<div class = "answer" id="opD"><h4></h4></div>
+			<div id="secretAnswer" style="display: none"></div>
+			<span id="gifHere"></span>
+		</div>
+
+		<div id="endbox">
+      <h1>Good game!</h1><br><br>
+      <span id="correct"></span><br><br><br>
+      <span id="incorrect"></span><br><br><br>
+      <button id="reset">Play Again</button>
+    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/trivia.js"></script>
+</center>
+</body>
+</html>
