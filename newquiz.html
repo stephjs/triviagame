@@ -14,28 +14,43 @@
 
 	<div id="box">
 		<div id="startbox">
-			<h2>PROBS NOT TBH...</h2>
-			<button id="start">Start</button>
+			<h2>You'll have 10 seconds to answer each question.</h2>
+			<h2>If you don't answer the question within the time, it'll be counted as incorrect.</h2>
+			<button id="start">Let's Play!</button>
 		</div>
+
 		<div id="gamebox">
-			<div id="question"><h2></h2></div>
+		<div class="container">
+			<div id="question"></div>
 			<br>
 			<div id="timer"></div>
 			<br>
-			<div class = "answer" id="opA"><h4></h4></div>
-			<div class = "answer" id="opB"><h4></h4></div>
-			<div class = "answer" id="opC"><h4></h4></div>
-			<div class = "answer" id="opD"><h4></h4></div>
-			<div id="secretAnswer" style="display: none"></div>
-			<span id="gifHere"></span>
+			<div class = "answer" id="opA"></div>
+			<div class = "answer" id="opB"></div>
+			<div class = "answer" id="opC"></div>
+			<div class = "answer" id="opD"></div>
+			<div id="secretAnswer"></div>
+		</div>
+		</div>
+
+		<div id="correctBox">
+			<h1>Correct!</h1><br>
+			<h2 id="correctQ"></h2>
+			<h2 id="correctA"></h2>
+		</div>
+
+		<div id="incorrectBox">
+			<h1>Incorrect!</h1><br>
+			<h2 id="incorrectQ"></h2>
+			<h2 id="incorrectA"></h2>
 		</div>
 
 		<div id="endbox">
-      <h1>Good game!</h1><br><br>
-      <span id="correct"></span><br><br><br>
-      <span id="incorrect"></span><br><br><br>
-      <button id="reset">Play Again</button>
-    </div>
+	      <h1>Good game!</h1>
+	      <h1 id="correct"></h1>
+	      <h1 id="incorrect"></h1>
+	      <button id="reset">Play Again</button>
+	    </div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>

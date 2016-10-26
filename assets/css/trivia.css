@@ -1,9 +1,17 @@
-body {
-	background-image: url("old_mathematics.png");
+/**/
+
+html, body {
+	background-image: url("../images/old_mathematics.png");
 	font-family: 'Schoolbell', cursive;
+  	height:100%;
+  	width: 100%;
+  	margin: 0 auto;
+  	padding: 0;
+}
+
 }
 #box {
-	width: 95%;
+	width: 90%;
 	margin-bottom: 50px;
 }
 
@@ -15,37 +23,65 @@ body {
 
 #startbox {
 	background-color: #add8e6;
-	width: 1000px;
 	height: 500px;
 	border: 1px black solid;
 	padding: 25px;
 	margin: 25px;
+}
+#timer {
+	font-size: 70px;
+	border: 2px solid black;
+	padding: 5px;
+	width: 100px;
+	height: 100px;
+}
+#secretAnswer {
+	display: none;
 }
 
 #gamebox {
-	background-color: #98fb98;
-	width: 1000px;
-	height: 500px;
-	border: 1px black solid;
-	padding: 25px;
-	margin: 25px;
-}
-
-#endbox {
+	display: none;
 	background-color: #ffffe0;
-	width: 1000px;
 	height: 500px;
 	border: 1px black solid;
 	padding: 25px;
 	margin: 25px;
 }
 
-#start {
-	width: 30%;
-	height: 70px;
+#correctBox, #incorrectBox {
+	display: none;
+	height: 500px;
+	border: 1px black solid;
+	padding: 25px;
+	margin: 25px;
+}
+
+#correctBox {
+	background-color: #98fb98;
+}
+
+#incorrectBox {
+	background-color: red;
+}
+#endbox {
+	display: none;
+	background-color: #add8e6;
+	height: 500px;
+	border: 1px black solid;
+	padding: 25px;
+	margin: 25px;
+}
+
+#start, #reset {
+	padding: 10px;
 	font-size: 35px;
-	margin-top: 30%;
+	margin-top: 100px;
 	background-color: green;
+}
+
+#start:hover, #reset:hover {
+	background-color: black;
+	color: green;
 }
 
 #question {
